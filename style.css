@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #14112e;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    background-image: url(./img/bg.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #a0a3c4;
+    display: block;
+    font-weight: 600px;
+}
+.menu .navbar ul li a:hover{
+    color: #fff;
+    text-shadow: 0 0 5px cyan,0 0 25px cyan,
+    0 0 50px cyan;
+    transition: .5s;
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+}
+.header-txt{
+    width: 50%;
+}
+.header-txt span{
+    font-size: 14px;
+    color: #5b5bd7;
+    text-transform: capitalize;
+}
+
+.header-txt h1{
+    font-size: 58px;
+    line-height: 70px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.btn-1{
+    display: inline-block;
+    padding: 11px 25px;
+    text-transform: capitalize;
+    color: #fff;
+    background: linear-gradient(
+        90deg,
+        rgba(72,87,240,1) 25%,
+        rgba(23,54,164,1) 100%);
+    border-radius: 15px;
+}
+.header-img{
+    width: 50%;
+}
+.header-img img{
+    height: 500px;
+    width: 600px;
+}
+.games{
+    padding: 0 0 50px 0;
+    position: relative;
+}
+.ba{
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    left: -250px;
+    z-index: -1;
+}
+.txt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.txt h2{
+    font-size: 30px;
+    color: #fff;
+}
+.games-content{
+    display: flex;
+}
+.game img{
+    margin: 0 5px;
+    width: 190px;
+    border-radius: 15px;
+}
+.follo{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.follo img{
+    width: 20px;
+}
+.follo h3{
+    color: #fff;
+    font-size: 13px;
+}
+.btn-2{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #393d63;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    border-radius: 15px;
+}
+.about{
+    padding: 100px 0;
+}
+.about-content{
+    display: flex;
+}
+.about-1{
+    width: 50%;
+}
+.about-1{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)),
+        url(./img/bg-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+    display: flex;
+    align-items: end;
+    height: 500px;
+}
+.about-1 img{
+    width: 70px;
+}
+.about-1 h3{
+    font-size: 14px;
+    color: #fff;
+    margin-left: 15px;
+}
+.about-2{
+    width: 50%;
+    margin-left: 10px;
+}
+.about-in1{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)),
+        url(./img/bg-3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+    display: flex;
+    align-items: end;
+    height: 245px;
+    margin-bottom: 10px;
+}
+.about-in1 img{
+    width: 70px;
+}
+.about-in1 h3{
+    font-size: 14px;
+    color: #fff;
+    margin-left: 15px;
+}
+.about-in2{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)),
+        url(./img/bg-4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px;
+    display: flex;
+    align-items: end;
+    height: 245px;
+    margin-bottom: 10px;
+}
+.about-in2 img{
+    width: 70px;
+}
+.about-in2 h3{
+    font-size: 14px;
+    color: #fff;
+    margin-left: 15px;
+}
+.news{
+    padding: 100px 0;
+}
+.news-content{
+    display: flex;
+}
+.news-txt{
+    width: 70%;
+    margin-right: 25px;
+}
+.news-1{
+    display: flex;
+    margin-bottom: 20px;
+}
+.news-1 img{
+    border-radius: 15px;
+}
+.news-form{
+    width: 30%;
+}
+.news-right{
+    margin-left: 10px;
+}
+.news-right h3{
+    color: #fff;
+    margin-bottom: 10px;
+}
+.news-right p{
+    font-size: 16px;
+    color: #a0a3c4;
+    margin-bottom: 20px;
+}
+.btn-3{
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #393d63;
+    border-radius: 10px;
+}
+.news-form h3{
+    font-size: 18px;
+    color: #fff;
+}
+.news-form p{
+    font-size: 16px;
+    color: #a0a3c4;
+    margin-bottom: 20px;
+}
+.news-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.news-form form textarea{
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+}
+input{
+    padding: 13px 10px;
+    outline: none;
+    background-color: #393d63;
+    border: 0;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: #fff;
+    display: block;
+}
+hr{
+    border: 1px solid #ffffff28;
+}
+.footer{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer h3{
+    color: #ffffff;
+    font-size: 18px;
+    margin-right: 15px;
+}
+.footer ul{
+    display: flex;
+}
+.footer a{
+    color: #a0a3c4;
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+.footer a:hover{
+    color: #fff;
+    text-shadow: 0 0 5px cyan,0 0 25px cyan,
+    0 0 50px cyan;
+    transition: .5s;
+}
+.creador {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.creador a{
+    color: #a0a3c4;
+}
+.creador a:hover{
+    color: #fff;
+    text-shadow: 0 0 5px cyan,0 0 25px cyan,
+    0 0 50px cyan;
+    transition: .5s;   
+}
+.btn-3:hover{
+    color: #fff;
+    text-shadow: 0 0 5px cyan,0 0 25px cyan,
+    0 0 50px cyan;
+    transition: .5s;  
+}
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1f1f1f;
+        display: none;
+    }
+    .menu ,.navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header{
+        min-height: 0vh;
+    }
+    .header-content{
+        flex-direction: column;
+        padding: 100px 30px 30px 30px ;
+    }
+    .header-txt{
+        width: 100%;
+        text-align: center;
+    }
+    .header-txt h1{
+        margin-bottom: 15px;
+    }
+    .header-img{
+        width: 100%;
+    }
+    .header-img img{
+        width: 100%;
+        height: 300px;
+    }
+    .games{
+        padding: 30px;
+    }
+    .ba{
+        display: none;
+    }
+    .games-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .game{
+        margin-bottom: 15px;
+    }
+    .btn-2{
+        width: 110px;
+    }
+    .about{
+        padding: 30px;
+    }
+    .about-content{
+        flex-direction: column;
+    }
+    .about-1{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .about-in2 h3{
+        font-size: 12px;
+        color: #fff;
+        margin-left: 15px;
+    }
+    .about-in1 h3{
+        font-size: 12px;
+        color: #fff;
+        margin-left: 15px;
+    }
+    .about-2{
+        width: 100%;
+        margin-left: 0;
+    }
+    .news{
+        padding: 30px;
+    }
+    .news-content{
+        flex-direction: column;
+    }
+    .news-txt{
+        width: 100%;
+        margin-right: 0;
+    }
+    .news-form{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .news-1{
+        flex-direction: column;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;   
+    }
+    .creador{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .creador a{
+        color: #a0a3c4;
+    }
+    
+}
